@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,300&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,300&family=Nanum+Myeongjo&family=Playfair+Display:wght@500;600&display=swap');
+
+body{
+   font-family: 'Barlow', sans-serif;
+   font-weight: 400;
+   font-size: 1.2em;
+   height: 100%;
+   background: rgb(242, 242, 236);
+   line-height: 1.5em;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+}
+
+/* =================================header===================================================== */
+
+.header{
+   background: linear-gradient(313deg, rgba(203,252,195,1) 0%, rgba(239,244,166,1) 50%, rgba(203,252,195,1) 100%);
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   z-index: 100;
+}  
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   font-weight: 700;
+   padding: 10px 30px;
+   max-width: 1200px;
+}
+.header-logo {
+   max-width: 60px;
+}
+.header-logo__img{
+   max-width: 60px;
+   border-radius: 10px;
+   border: 2px solid green;
+   box-shadow: 2px 2px 2px rgb(9, 45, 9);
+}
+.header-navigation__link {
+   line-height: 0.8em;
+   align-items: center;
+   padding: 5px;
+   margin-left: 20px;
+   color: rgb(29, 51, 15);
+   transition: 0.3s;
+}
+.header-navigation__link:hover{
+   text-shadow: 2px 2px 5px rgb(88, 107, 81);
+   
+}
+.header-navigation__link:active{
+   background-color: rgb(156, 189, 144);
+}
+
+/* =================================main index===================================================== */
+
+.main {
+   padding: 0 20px 0px;
+   flex: 1 1 auto;
+   margin: 0 auto;
+   max-width: 1200px;
+   margin-bottom: 40px;
+   margin-top: 80px;
+}
+.main-picture {
+   margin: 0 0 40px 0;
+}
+.main-picture__img{
+   width: 100%;
+   
+}
+.main-information {
+   text-align: center;
+   margin: 0 0 40px 0;
+}
+
+.title {
+   font-family: 'Playfair Display', serif;
+   color: rgb(29, 51, 15);
+   font-weight: 600;
+   font-size: 2em;
+   margin: 0 auto;
+   margin: 0 0 30px 0;
+}
+.main-information__text {
+   font-size: 1.1em;
+   max-width: 900px;
+   margin: 0 auto;
+   word-spacing: 0.1em;
+}
+.main-activities {
+   text-align: center;
+   max-width: 1200px;
+   margin-bottom: 40px;
+}
+
+.main-activities__items {
+   display: flex;
+   justify-content: space-between;
+   max-width: 700px;
+   margin: 0 auto;
+}
+.main-activities__item{
+   color: rgb(29, 51, 15);
+   font-weight: 700;
+   transition: 0.3s;
+   background: linear-gradient(313deg, rgba(203,252,195,1) 0%, rgba(239,244,166,1) 50%, rgba(203,252,195,1) 100%);
+   min-height: 60px;
+   min-width: 150px;
+   border-radius: 5px;
+   font-size: 1.2em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid green;
+}
+.main-activities__img{
+   width: 100%;
+}
+.main-staff {
+   max-width: 1200px;
+   text-align: center;
+}
+
+.main-staff__items {
+   display: flex;
+}
+.main-staff__item {
+   margin: 10px;
+   padding: 10px;
+}
+.main-staff__item-icon {
+   margin: 0 auto;
+   width: 100%;
+   margin-bottom: 10px;
+}
+.item-title {
+   font-family: 'Playfair Display', serif;
+   color: rgb(29, 51, 15);
+   font-weight: 600;
+   font-size: 1.5em;
+   margin-bottom: 15px;
+}
+.item-text {
+   max-width: 300px;
+   margin: 0 auto;
+   text-align: justify;
+   line-height: 1.2em;
+}
+.main-contacts {
+   padding: 10px;
+   text-align: center;
+}
+.main-contacts__text {
+   font-size: 1.5em;
+   margin-bottom: 10px;
+   font-weight: 600;
+}
+.main-contacts__number {
+   font-family: 'Playfair Display', serif;
+   color: rgb(29, 51, 15);
+   font-weight: 600;
+   font-size: 1.8em;
+}
+.main-contacts__number:hover{
+   font-size: 2em;
+   text-shadow: 1px 1px 5px green;
+   transition: 0.3s;
+}
+
+/* =================================mobile first===================================================== */
+
+@media (max-width: 767.98px){
+   .main{
+      margin-top: 130px;
+   }
+   .title{
+      font-size: 1.2em;
+      margin-bottom: 30px;
+   }
+   .main-information__text .main-activities__land-text {
+      font-size: 0.8em;
+   }
+   .header-navigation{
+      display: flex;
+      flex-direction: column;
+      text-align: end;
+   }
+   .header-navigation__link{
+      font-size: 0.8em;
+      margin-left: 5px;
+   }
+   .main{
+      padding: 0 10px 0px;
+   }
+   .main-activities__items{
+      max-width: 500px;
+   }
+   .main-activities__item{
+      font-size: 0.8em;
+      min-height: 40px;
+      min-width: 100px;
+   }
+   .main-staff{
+      margin-bottom: 30px;
+   }
+   .main-staff__items{
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .main-staff__item{
+      background: linear-gradient(313deg, rgba(203,252,195,1) 0%, rgba(239,244,166,1) 50%, rgba(203,252,195,1) 100%);
+      padding: 5px;
+      border-radius: 10px;
+   }
+   .main-staff__item-icon{
+      width: 70%;
+   }
+   .item-title{
+      font-size: 1.2em;
+   }
+   .item-text{
+      font-size: 0.9em;
+   }
+   .main-contacts {
+      font-size: 0.8em;
+   }
+   .main-contacts__number {
+      margin: 0 auto;
+   }
+   .main-comments__text-item{
+      font-size: 0.8em;
+   }
+}
+@media (max-width: 991.98px){
+   .main-activities__land-container {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .main-activities__water-container {
+      flex-wrap: wrap;
+      margin: 0 auto;
+   }
+   .main-activities__rope-container {
+      flex-wrap: wrap;
+      margin: 0 auto;
+   }
+   .main-activities__land-item{
+      max-width: 350px;
+      justify-content: center;
+   } 
+}
+/* =================================land Based activities===================================================== */
+
+.main-activities__activities-container {
+   text-align: center;
+   margin-bottom: 40px;
+}
+.main-activities__land-text .main-activities__water-text .main-activities__rope-text{
+   margin-bottom: 40px;
+   font-size: 1.1em;
+   line-height: 1.5em;
+}
+.main-activities__land-container {
+   display: flex;
+   padding: 10px;
+}
+.main-activities__land-item {
+   background: linear-gradient(313deg, rgba(203,252,195,1) 0%, rgba(239,244,166,1) 50%, rgba(203,252,195,1) 100%);
+   margin: 5px;
+   padding: 10px;
+   border-radius: 20px;
+   /* flex: 0 0 25%; */
+}
+
+.items-title {
+   font-family: 'Playfair Display', serif;
+   color: rgb(29, 51, 15);
+   font-weight: 600;
+   font-size: 1.2em;
+   margin: 0 auto;
+   margin: 0 0 30px 0;
+}
+.items-text {
+   font-size: 1.0em;
+   line-height: 1.2em;
+   max-width: 900px;
+   margin: 0 auto;
+   word-spacing: 0.1em; 
+}
+.land-item__items-img{
+   justify-content: center;
+   margin-top: auto;
+}
+
+/* =================================Water Based activities===================================================== */
+
+.main-activities__water-container {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   flex-wrap: wrap;
+   column-gap: 30px;
+   row-gap: 30px;
+}
+.main-activities__water-item {
+   background: linear-gradient(313deg, rgba(203,252,195,1) 0%, rgba(239,244,166,1) 50%, rgba(203,252,195,1) 100%);
+   padding: 10px;
+   border-radius: 20px;
+   max-width: 350px;
+   min-width: 250px;
+   flex: 1 1 33.333%;
+}
+
+/* =================================Rope Based activities===================================================== */
+
+.main-activities__rope-container {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   flex-wrap: wrap;
+   column-gap: 30px;
+   row-gap: 30px;
+}
+.main-activities__rope-item {
+   background: linear-gradient(313deg, rgba(203,252,195,1) 0%, rgba(239,244,166,1) 50%, rgba(203,252,195,1) 100%);
+   padding: 10px;
+   border-radius: 20px;
+   max-width: 350px;
+   min-width: 250px;
+   flex: 1 1 33.333%;
+}
+
+/* =================================main comments===================================================== */
+
+.main-comments__text-items{
+   text-align: left;
+}
+.main-comments__text-item{ 
+   padding-left: 40px;
+   position: relative;
+   font-style: italic;
+   font-weight: 600;
+   font-size: 1.2em;
+}
+.main-comments__text-item:not(:last-child){
+   margin-bottom: 20px;
+}
+.main-comments__text-item::before{
+   content: "";
+   position: absolute;
+   border-radius: 50%;
+   width: 15px;
+   height: 15px;
+   top: 7px;
+   left: 1%;
+   background: rgb(5, 90, 18);
+}
+/* =================================footer===================================================== */
+.footer {
+   background: linear-gradient(313deg, rgba(203,252,195,1) 0%, rgba(239,244,166,1) 50%, rgba(203,252,195,1) 100%);
+   min-height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
